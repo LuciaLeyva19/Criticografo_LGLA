@@ -26,7 +26,7 @@ namespace Criticografo_LGLA
             else if (Muj.IsChecked)
             {
                 CambiarTextoYColor("Alta", "Fea", "Lista",
-                                   "Elegante", "Rara", "Grande", Color.HotPink);
+                                   "Extravagante", "Rara", "Grande", Color.HotPink);
             }
         }
 
@@ -54,7 +54,7 @@ namespace Criticografo_LGLA
         {
 
         }
-        public void Criticar_btn (object sender, EventArgs e)
+        public void Criticar_btn(object sender, EventArgs e)
         {
             
             string nombre = Nombre.Text;
@@ -66,22 +66,22 @@ namespace Criticografo_LGLA
             List<string> caracteristicas = new List<string>();
 
             if (Alto.IsChecked)
-                caracteristicas.Add("Alto");
+                caracteristicas.Add(LAlto.Text);  
             if (Listo.IsChecked)
-                caracteristicas.Add("Listo");
+                caracteristicas.Add(LListo.Text);
             if (Raro.IsChecked)
-                caracteristicas.Add("Raro");
+                caracteristicas.Add(LRaro.Text);
             if (Feo.IsChecked)
-                caracteristicas.Add("Feo");
+                caracteristicas.Add(LFeo.Text);
             if (Extravagante.IsChecked)
-                caracteristicas.Add("Extravagante");
+                caracteristicas.Add(LExtravagante.Text);
             if (Grande.IsChecked)
-                caracteristicas.Add("Grande");
+                caracteristicas.Add(LGrande.Text);
 
             
             string mensaje = $"Nombre: {nombre}\nGénero: {genero}\nCaracterísticas: {string.Join(", ", caracteristicas)}";
 
-            
+          
             DisplayAlert("Datos de Crítica", mensaje, "OK");
         }
     }
