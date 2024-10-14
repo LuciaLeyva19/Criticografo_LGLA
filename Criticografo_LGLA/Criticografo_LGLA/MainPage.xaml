@@ -13,10 +13,10 @@
         <Label Text="Genero:" FontSize="20"></Label>
 
         <StackLayout Orientation="Horizontal">
-            <RadioButton Value="Hombre" x:Name="Hom" IsChecked="False" CheckedChanged="OnGenderChanged"></RadioButton>
+            <RadioButton Value="Hombre" x:Name="Hom" IsChecked="False" CheckedChanged="SeleccionarGenero"></RadioButton>
             <Label Text="Hombre" FontSize="15"></Label>
             
-            <RadioButton Value="Mujer" x:Name="Muj" IsChecked="False" CheckedChanged="OnGenderChanged"></RadioButton>
+            <RadioButton Value="Mujer" x:Name="Muj" IsChecked="False" CheckedChanged="SeleccionarGenero"></RadioButton>
             <Label Text="Mujer" FontSize="15"></Label>
         </StackLayout>
 

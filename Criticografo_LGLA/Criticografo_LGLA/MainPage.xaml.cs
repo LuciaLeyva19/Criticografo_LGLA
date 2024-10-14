@@ -15,7 +15,7 @@ namespace Criticografo_LGLA
             InitializeComponent();
         }
 
-        private void OnGenderChanged(object sender, CheckedChangedEventArgs e)
+        private void SeleccionarGenero(object sender, CheckedChangedEventArgs e)
         {
             
             if (Hom.IsChecked)
